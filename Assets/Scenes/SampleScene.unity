@@ -2355,6 +2355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008647285}
   - component: {fileID: 2008647284}
+  - component: {fileID: 2008647286}
   m_Layer: 0
   m_Name: WaveSpawner
   m_TagString: Untagged
@@ -2377,12 +2378,18 @@ MonoBehaviour:
   waves:
   - name: Wave 1
     nrOfEnemies: 2
+    typeOfEnemies:
+    - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
     spawnInterval: 3
   - name: Wave 2
     nrOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
     spawnInterval: 2
   - name: Final wave
     nrOfEnemies: 5
+    typeOfEnemies:
+    - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
     spawnInterval: 1
   spawnPoints:
   - {fileID: 112169813}
@@ -2403,6 +2410,7 @@ MonoBehaviour:
   - {fileID: 1284184276}
   - {fileID: 2008715850}
   - {fileID: 442603934}
+  canSpawn: 1
 --- !u!4 &2008647285
 Transform:
   m_ObjectHideFlags: 0
@@ -2419,6 +2427,33 @@ Transform:
   - {fileID: 1328171582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &2008647286
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008647283}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2008715849
 GameObject:
   m_ObjectHideFlags: 0
