@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 [System.Serializable]
 
 public class Wave
@@ -13,33 +15,48 @@ public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
+    public WaveUIManager uiManager;
 
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
 
     public bool canSpawn = true;
+    private bool isWaveStarting = false;
 
     void Start()
     {
-
+        currentWave = waves[currentWaveNumber];
+        StartCoroutine(StartWaveSequence());
     }
 
     private void Update()
     {
-        currentWave = waves[currentWaveNumber];
-        SpawnWave();
-        GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
+        if (!isWaveStarting && currentWaveNumber < waves.Length)
         {
-            currentWaveNumber++;
-            canSpawn = true;
+            StartCoroutine(StartWaveSequence());
         }
     }
 
-    void SpawnNextWave()
+    private IEnumerator StartWaveSequence()
     {
-        
+        isWaveStarting = true;
+        currentWave = waves[currentWaveNumber];
+
+        yield return StartCoroutine(uiManager.ShowWaveStart(currentWave.name));
+
+        canSpawn = true;
+
+        while (GameObject.FindGameObjectsWithTag("Enemy").Length > 0 || currentWave.nrOfEnemies > 0)
+        {
+            SpawnWave();
+            yield return null;
+        }
+
+        yield return StartCoroutine(uiManager.ShowWaveComplete());
+
+        currentWaveNumber++;
+        isWaveStarting = false;
     }
 
     void SpawnWave()
