@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2801209192797533036}
   - component: {fileID: 7524532207859179109}
   - component: {fileID: 154025284068795717}
+  - component: {fileID: -2139717334920305996}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -265,3 +266,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: -1, y: 0}
   speed: 7
+--- !u!114 &-2139717334920305996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757919796587130837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bab82f360667a548819c3588f5fae10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  targetTag: Player
+  destroySelfOnHit: 1
