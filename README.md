@@ -1,6 +1,6 @@
 # RacketGame
 
-![Gameplay Demo](gif/gif3.gif)
+![Gameplay Demo](gif/gif4.gif)
 
 ## Description
 I've started working on a new game. :D It's a recreation of a simple project I made in C++ around 5 years ago. In the original version, the idea was to control a racket and avoid asteroids, with each asteroid giving 10 points. In this new version, I'm turning it into a shooter-style game, where the enemies are alien cats. The main goal is to learn by practicing.
@@ -29,6 +29,7 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 | Implemented basic player mechanics, including top-down movement and shooting a horizontal projectile. Learned how to use Unity's Input System and Rigidbody2D for smooth directional control and how to instantiate objects using simple scripting. This serves as the core control scheme for the future game interactions. | July 4, 2025  |
 | Added the game background, implemented player collision with enemies, as well as bullet collision with enemies. Introduced enemies moving horizontally, with randomized spawning points to enhance gameplay variability.                                                                                     | July 5, 2025  |
 | Added a moving background featuring planets acting as tangible obstacles that move synchronously with the background. These obstacles are spawned randomly to increase gameplay complexity and visual interest. | July 12, 2025 |
+| Implemented player health system with 3 lives, so the player loses a life upon collision with enemies or planets. Added screen boundary walls to prevent the player from moving outside the game window, ensuring better gameplay control and user experience. | August 24, 2025 |
 
 ## Development Demos
 
@@ -38,6 +39,9 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 
 ### July 5, 2025 — Enemies and Collision Mechanics
 ![Enemies Movement and Collision](gif/gif2.gif)
+
+### July 12, 2025 — Moving Background and Obstacles
+![Moving Background and Obstacles](gif/gif3.gif)
 
 ---
 
