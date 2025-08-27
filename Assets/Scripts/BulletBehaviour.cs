@@ -15,9 +15,14 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            Score.scoreValue += 10;
             // destroy the enemy
             Destroy(other.gameObject);
             // destroy the bullet
+            Destroy(gameObject);
+        }
+        if (other.CompareTag("Planet"))
+        {
             Destroy(gameObject);
         }
     }

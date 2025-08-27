@@ -1,6 +1,6 @@
 # RacketGame
 
-![Gameplay Demo](gif/gif5.gif)
+![Gameplay Demo](gif/gif6.gif)
 
 ## Description
 I've started working on a new game. :D It's a recreation of a simple project I made in C++ around 5 years ago. In the original version, the idea was to control a racket and avoid asteroids, with each asteroid giving 10 points. In this new version, I'm turning it into a shooter-style game, where the enemies are alien cats. The main goal is to learn by practicing.
@@ -31,6 +31,7 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 | Added a moving background featuring planets acting as tangible obstacles that move synchronously with the background. These obstacles are spawned randomly to increase gameplay complexity and visual interest. | July 12, 2025 |
 | Implemented player health system with 3 lives, so the player loses a life upon collision with enemies or planets. Added screen boundary walls to prevent the player from moving outside the game window, ensuring better gameplay control and user experience. | August 24, 2025 |
 | Implemented a visual health system UI using Canvas, displaying player lives as heart icons that update dynamically when the player takes damage or heals. Set up proper anchoring and layout to ensure hearts remain fixed on the screen regardless of resolution, integrating seamlessly with the existing HealthSystem script. | August 26, 2025 |
+| Added scoring system, awarding 10 points for each cat enemy defeated. Implemented bullet collision with planets so that bullets stop upon impact without additional effects. Set up player life penalty: when a cat enemy passes beyond the player, it disappears and the player loses one life. | August 27, 2025 |
 
 ## Development Demos
 
@@ -47,6 +48,8 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 ### August 24, 2025 — Player Health System and Screen Boundaries
 ![HealthSystem and Walls](gif/gif4.gif)
 
+### August 26, 2025 — Visual Health System UI
+![Visual Health System UI](gif/gif5.gif)
 ---
 
 ## Bibliography / Tutorials Used

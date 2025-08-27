@@ -17,5 +17,12 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Player hit by enemy!");
         }
+
+        if (other.CompareTag("Wall"))
+        {
+            HealthSystem playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthSystem>();
+            playerHealth.TakeDamage(1);
+            Destroy(gameObject); 
+        }
     }
 }
