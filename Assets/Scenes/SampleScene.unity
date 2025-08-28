@@ -1173,8 +1173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 365, y: 224}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 268.9259, y: 218.549}
+  m_SizeDelta: {x: -92.1482, y: 110.902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &568893597
 GameObject:
@@ -3863,19 +3863,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: Wave 1
-    nrOfEnemies: 10
+    nrOfEnemies: 1
     typeOfEnemies:
     - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
     spawnInterval: 3
   - name: Wave 2
-    nrOfEnemies: 10
+    nrOfEnemies: 1
     typeOfEnemies:
-    - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
+    - {fileID: 4829858333602933813, guid: 13b40af6a0bb18a4d86bc69f42d09997, type: 3}
     spawnInterval: 2
   - name: Final wave
-    nrOfEnemies: 10
+    nrOfEnemies: 1
     typeOfEnemies:
-    - {fileID: 2757919796587130837, guid: 55c67c7f1b6aa6346b71ffc8631daed9, type: 3}
+    - {fileID: 877703593458218151, guid: 8a01ef3a7921c2144aedb139b041d2da, type: 3}
+    spawnInterval: 1
+  - name: Final wave
+    nrOfEnemies: 1
+    typeOfEnemies:
+    - {fileID: 4230567276210423943, guid: 0f3df8aca2f33ba4bb768aad42b1e2c2, type: 3}
+    spawnInterval: 1
+  - name: Final wave
+    nrOfEnemies: 1
+    typeOfEnemies:
+    - {fileID: 3823565445679734787, guid: 8795b6cf73d9d5b4880866b88754cd6e, type: 3}
     spawnInterval: 1
   spawnPoints:
   - {fileID: 112169813}
