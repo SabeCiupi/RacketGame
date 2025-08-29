@@ -1,6 +1,6 @@
 # RacketGame
 
-![Gameplay Demo](gif/gif7.gif)
+![Gameplay Demo](gif/gif8.gif)
 
 ## Description
 I've started working on a new game. :D It's a recreation of a simple project I made in C++ around 5 years ago. In the original version, the idea was to control a racket and avoid asteroids, with each asteroid giving 10 points. In this new version, I'm turning it into a shooter-style game, where the enemies are alien cats. The main goal is to learn by practicing.
@@ -33,6 +33,8 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 | Implemented a visual health system UI using Canvas, displaying player lives as heart icons that update dynamically when the player takes damage or heals. Set up proper anchoring and layout to ensure hearts remain fixed on the screen regardless of resolution, integrating seamlessly with the existing HealthSystem script. | August 26, 2025 |
 | Added scoring system, awarding 10 points for each cat enemy defeated. Implemented bullet collision with planets so that bullets stop upon impact without additional effects. Set up player life penalty: when a cat enemy passes beyond the player, it disappears and the player loses one life. | August 27, 2025 |
 | Added new enemy types to diversify gameplay and increase challenge: ZigZag Cat, which moves in a zigzag pattern; Armored Cat, with 2 lives, each represented by a different prefab state; Chaser Cat, which actively follows the player’s position; and Runner Cat, moving at twice the speed of the Basic Cat. | August 28, 2025 |
+| Added pause button with a pause menu, including a resume button to return to gameplay. | August 29, 2025 |
+
 
 ## Development Demos
 
@@ -55,7 +57,11 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 ### August 27, 2025 — Scoring System and Bullet Collision
 ![Scoring System and Bullet Collision](gif/gif6.gif)
 
-<!-- ### August 28, 2025 — New Enemy Types -->
+### August 28, 2025 — New Enemy Types 
+![New Enemy Types](gif/gif7.gif)
+
+<!-- ### August 29, 2025 — Pause Menu with Resume Button 
+![Pause Menu](gif/gif8.gif)-->
 ---
 
 ## Bibliography / Tutorials Used
@@ -65,5 +71,6 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 - [ChronoABI - Simple Wave spawner in Unity 2D](https://www.youtube.com/watch?v=pKN8jVnSKyM)
 - [Root Games - Unity 2D: Scrolling Background](https://www.youtube.com/watch?v=Wz3nbQPYwss)
 - [Night Run Studio - Player Health System #2: Heart Display UI (Unity Tutorial)](https://www.youtube.com/watch?v=uqGkNTFzYXM)
+- [Rehope Games - How to Create a PAUSE MENU in Unity ! | UI Design Tutorial](https://www.youtube.com/watch?v=MNUYe0PWNNs&t=62s)
 
 > These tutorials were essential in mastering core gameplay mechanics such as character movement, projectile behavior, and enemy wave spawning in Unity.
