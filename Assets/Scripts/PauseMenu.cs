@@ -30,7 +30,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Score.scoreValue = 0;
+        SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1;
     }
 }
