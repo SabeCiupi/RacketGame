@@ -35,6 +35,7 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 | Added new enemy types to diversify gameplay and increase challenge: ZigZag Cat, which moves in a zigzag pattern; Armored Cat, with 2 lives, each represented by a different prefab state; Chaser Cat, which actively follows the player’s position; and Runner Cat, moving at twice the speed of the Basic Cat. | August 28, 2025 |
 | Added pause button with a pause menu, including a resume button to return to gameplay. | August 29, 2025 |
 | Added functionality for the Restart button in the pause menu, and the Home button. Created a Main Menu with functional Play and Quit buttons. Gave the game its name: *Paws in Space*.| September 2, 2025 |
+| Added background music: first track plays at game start, then seamlessly transitions to a looping track. Implemented using a singleton AudioManager to ensure a single persistent audio instance across all scenes. Added button sound effects for better user feedback. | September 3, 2025 |
 
 
 ## Development Demos
@@ -75,5 +76,6 @@ I've started working on a new game. :D It's a recreation of a simple project I m
 - [Root Games - Unity 2D: Scrolling Background](https://www.youtube.com/watch?v=Wz3nbQPYwss)
 - [Night Run Studio - Player Health System #2: Heart Display UI (Unity Tutorial)](https://www.youtube.com/watch?v=uqGkNTFzYXM)
 - [Rehope Games - How to Create a PAUSE MENU in Unity ! | UI Design Tutorial](https://www.youtube.com/watch?v=MNUYe0PWNNs&t=62s)
+- [Rehope Games - How to Add MUSIC and SOUND EFFECTS to a Game in Unity | Unity 2D Platformer Tutorial #16](https://www.youtube.com/watch?v=N8whM1GjH4w)
 
 > These tutorials were essential in mastering core gameplay mechanics such as character movement, projectile behavior, and enemy wave spawning in Unity.
